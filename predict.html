@@ -1,0 +1,38 @@
+<h1>Enter values in field</h1>
+  {% from "includes/_formhelpers.html" import render_field %}
+<form method="POST" action="">
+<div class="form-group">
+      {{render_field(form.Gender, class_="form-control")}}
+</div>
+<div class="form-group">
+      {{render_field(form.Age, class_="form-control")}}
+</div>
+<div class="form-group">
+      {{render_field(form.EstimatedSalary, class_="form-control")}}
+</div>
+<!--
+<div class="form-group">
+      {{render_field(form.Product, class_="form-control")}}
+</div>
+-->
+
+<div class="form-group">
+<label for="Product">Product (For eg.: ipad, walkman)</label>
+<select class="form-control" id="Product" name="Product" required >
+<option value="1">IPHONE</option>
+<option value="2">VIVO</option>
+<option value="3">BOSE</option>
+<option value="4">MAC</option>
+<option value="5">SURFACE</option>
+<option value="6">FITBIT</option>
+<option value="7">IPOD</option>
+<option value="8">VAIO</option>
+<option value="9">WALKMAN</option>
+<option value="10">IPAD</option>
+</select>
+</div>
+
+<p><input type="submit" class="btnbtn-primary" value="Submit"></p>
+</form>
+
+{% endblock %}

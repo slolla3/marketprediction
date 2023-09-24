@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+	<h1>{{msg}}</h1>
+	<h2>Trained Model Saved to Disk</h2>
+	<h3>{{ model }} </h3>
+	{{data | safe}}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Prediction for this buyer is:
+    {% if prediction == '0' %}
+      Won't Buy (x_x)
+<br/>The customer will not buy {{Product}}
+    {% else %}
+      Bought :)
+<br/>The customer bought {{Product}}
+    {% endif %}
+<h1>
+    Buying Probability: {{predict_prob}}
+{% endblock %}
